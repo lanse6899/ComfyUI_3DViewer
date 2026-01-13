@@ -1,0 +1,60 @@
+{
+  "last_node_id": 3,
+  "last_link_id": 1,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "LoadImage",
+      "pos": [200, 200],
+      "size": {"0": 315, "1": 314},
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {"name": "IMAGE", "type": "IMAGE", "links": [1], "slot_index": 0},
+        {"name": "MASK", "type": "MASK", "links": null, "slot_index": 1}
+      ],
+      "properties": {"Node name for S&R": "LoadImage"},
+      "widgets_values": ["example.png"]
+    },
+    {
+      "id": 2,
+      "type": "ComfyUI3DViewerNode",
+      "pos": [600, 200],
+      "size": {"0": 350, "1": 550},
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {"name": "image", "type": "IMAGE", "link": 1}
+      ],
+      "outputs": [
+        {"name": "camera_info", "type": "STRING", "links": null, "slot_index": 0}
+      ],
+      "properties": {"Node name for S&R": "ComfyUI3DViewerNode"},
+      "widgets_values": [-4, 3.5, 4, 75]
+    },
+    {
+      "id": 3,
+      "type": "Note",
+      "pos": [200, 100],
+      "size": {"0": 750, "1": 80},
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {"text": "ComfyUI 3D Viewer 示例工作流\n1. LoadImage 节点加载一张图片\n2. 3D Viewer 节点会显示嵌入的3D场景，并将图片贴在模型正面\n3. 使用鼠标或滑块控件调节相机参数"}
+    }
+  ],
+  "links": [
+    [1, 1, 0, 2, 0, "IMAGE"]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {"ds": {"scale": 1, "offset": [0, 0]}},
+  "version": 0.4
+}
+
+

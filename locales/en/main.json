@@ -1,0 +1,8 @@
+{
+  "ComfyUI_3DViewer": {
+    "display_name": "ComfyUI 3D Viewer",
+    "description": "A ComfyUI custom node that embeds an interactive 3D viewer"
+  }
+}
+
+
