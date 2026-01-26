@@ -1,6 +1,8 @@
 # ComfyUI 3D查看器 插件
 
-一个用于在 ComfyUI 中快速启动本地 3D 查看器（ve2.html）的轻量插件。
+一个用于在 ComfyUI 中快速启动本地 3D 查看器轻量插件。
+
+<img width="1905" height="946" alt="ScreenShot_2026-01-26_090739_846" src="https://github.com/user-attachments/assets/7c91ace2-a033-4b56-9bbe-d712feba2ef4" />
 
 主要功能
 - 启动内置 HTTP 服务器并在浏览器中打开查看器
